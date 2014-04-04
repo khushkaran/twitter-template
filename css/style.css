@@ -1,0 +1,32 @@
+body{
+  background-image:url('../images/background.jpg');
+  background-size: 1500px;
+  background-repeat: no-repeat;
+  background-color: #485265
+}
+
+header{
+  background-color: #fff;
+  min-height: 46px;
+}
+
+#logo img{
+  width: 24px;
+  height: 16px;
+}
+
+#left_menu a{
+  text-decoration: none;
+}
+
+#left_menu{
+  display: inline;
+}
+
+#logo{
+  display: inline;
+}
+
+#right_menu{
+  display: inline;
+}
