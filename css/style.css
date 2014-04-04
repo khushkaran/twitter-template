@@ -1,3 +1,5 @@
+/*MAIN BODY AND HEADER*/
+
 body{
   background-image:url('../images/background.jpg');
   background-size: 1500px;
@@ -15,6 +17,7 @@ header{
   position:fixed;
   width: 100%;
   top:0px;
+  z-index: 100;
 }
 
 header img{ vertical-align: middle; }
@@ -67,6 +70,8 @@ textarea, input { outline: none; }
   width:936px;
   margin: 70px auto;
 }
+
+/*USER PROFILE*/
 
 #user{
   width: 290px;
@@ -129,10 +134,6 @@ textarea, input { outline: none; }
   color: #fff;
 }
 
-#user .handle{
-  
-}
-
 #compose-tweet{
   margin: 5px 5% 0 5%;
 }
@@ -148,4 +149,66 @@ textarea, input { outline: none; }
   padding-left: 10px;
   width: 95%;
   height: 32px;
+}
+
+/*WHO TO FOLLOW*/
+
+#who-to-follow{
+  border: 1px solid #EAE0D9;
+  width: 290px;
+  position: relative;
+  border-radius:5px;
+  background-color: white;
+}
+
+#who-to-follow .user{
+  min-height: 54px;
+  padding: 5px 0 5px 10px;
+}
+
+#who-to-follow .user .userimage{
+  width: 54px;
+  height: 54px;
+  float: left;
+  border-radius:5px;
+  padding-right: 5px;
+}
+
+#who-to-follow .user a{
+  text-decoration: none;
+}
+
+#who-to-follow .title-area span{
+  padding-left: 10px;
+  font-size: 20px;
+  color: #66757f;
+}
+
+#who-to-follow .title-area a{
+  padding-left: 10px;
+  font-size: 11px;
+  color: #89544E;
+  text-decoration: none;
+}
+
+#who-to-follow .title-area a:hover{
+  text-decoration: underline;
+}
+
+/*TRENDS*/
+
+#trends{
+  width: 290px;
+  position: relative;
+  border-radius:5px;
+  background-color: #F3EDE9;
+}
+
+/*TWITTER-DETAILS*/
+
+#twitter-details{
+  width: 290px;
+  position: relative;
+  border-radius:5px;
+  background-color: #F3EDE9;
 }
