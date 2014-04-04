@@ -4,12 +4,25 @@ body{
   background-repeat: no-repeat;
   background-color: #485265;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
 }
 
 header{
   background-color: #fff;
   min-height: 46px;
   text-align: center;
+}
+
+header img{
+  vertical-align: middle;
+}
+
+header div{
+  display: inline-block;
+}
+
+header a{
+  color: #66757F;
 }
 
 #logo img{
@@ -22,17 +35,26 @@ header{
 }
 
 #left_menu{
-  display: inline-block;
-  padding-right: 100px;
+  padding-right: 150px;
 }
 
-#logo{
-  display: inline-block;
+#left_menu a{
+  padding-right: 10px;
+  font-weight: bold;
+  transition: color 1s;
 }
 
-#right_menu{
-  display: inline-block;
-  padding-left: 100px;
+#left_menu a:hover{
+  color: #895429;
+}
+
+#right_menu a{
+  padding-left: 10px;
+}
+
+#search_div{
+  padding-left: 150px;
+  padding-top: 5px;
 }
 
 #search_box{
@@ -46,7 +68,6 @@ header{
   padding-left: 10px;
   width: 221px;
   height: 32px;
-
   background-image:url('../images/header/search.png');
   background-repeat:no-repeat;
 }

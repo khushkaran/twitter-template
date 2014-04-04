@@ -10,16 +10,16 @@
   <body>
   <header>
     <div id="left_menu">
-      <a href="#" title="Home"><img src="images/header/home.png">Home</a>
-      <a href="#" title="Notifications"><img src="images/header/notifications.png">Notifications</a>
-      <a href="#" title="Discover"><img src="images/header/discover.png">Discover</a>
-      <a href="#" title="Me"><img src="images/header/me.png">Me</a>
+      <a class="header-link" href="#" title="Home"><img src="images/header/home.png" data-hover-src="images/header/home_hover.png">&nbsp;Home</a>
+      <a href="#" title="Notifications"><img src="images/header/notifications.png" data-hover-src="images/header/notifications_hover.png">&nbsp;Notifications</a>
+      <a href="#" title="Discover"><img src="images/header/discover.png" data-hover-src="images/header/discover_hover.png">&nbsp;Discover</a>
+      <a href="#" title="Me"><img src="images/header/me.png" data-hover-src="images/header/me_hover.png">&nbsp;Me</a>
     </div>
 
     <div id="logo"><img src="images/logo.png"></div>
 
     <div id="right_menu">
-    <input id="search_box" type="text" placeholder="Search">
+    <div id="search_div"><input id="search_box" type="text" placeholder="Search"></div>
     <a href="#" title="Direct Messages"><img src="images/header/messages.png"></a>
     <a href="#" title="Settings and help"><img src="images/header/settings.png"></a>
     <a href="#" title="Compose new Tweet"><img src="images/header/tweet.png"></a>
@@ -27,5 +27,7 @@
 
   </header>
     
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
