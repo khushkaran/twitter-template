@@ -2,7 +2,8 @@ body{
   background-image:url('../images/background.jpg');
   background-size: 1500px;
   background-repeat: no-repeat;
-  background-color: #485265
+  background-color: #485265;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 header{
