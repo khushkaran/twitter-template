@@ -11,19 +11,15 @@ header{
   background-color: #fff;
   min-height: 46px;
   text-align: center;
+  margin:0px auto;
+  position:fixed;
+  width: 100%;
+  top:0px;
 }
 
-header img{
-  vertical-align: middle;
-}
-
-header div{
-  display: inline-block;
-}
-
-header a{
-  color: #66757F;
-}
+header img{ vertical-align: middle; }
+header div{ display: inline-block; }
+header a{ color: #66757F; }
 
 #logo img{
   width: 20px;
@@ -31,26 +27,15 @@ header a{
 }
 
 #left_menu a{
-  text-decoration: none;
-}
-
-#left_menu{
-  padding-right: 150px;
-}
-
-#left_menu a{
   padding-right: 10px;
   font-weight: bold;
   transition: color 1s;
+  text-decoration: none;
 }
 
-#left_menu a:hover{
-  color: #895429;
-}
-
-#right_menu a{
-  padding-left: 10px;
-}
+#left_menu{ padding-right: 150px; }
+#left_menu a:hover{ color: #895429; }
+#right_menu a{ padding-left: 10px; }
 
 #search_div{
   padding-left: 150px;
@@ -78,3 +63,83 @@ header a{
 #search_box:-ms-input-placeholder { color: #e1e8ed; }
 textarea, input { outline: none; }
 
+.content {
+  width:936px;
+  margin: 70px auto;
+}
+
+#user{
+  width: 290px;
+  height: 248px;
+  position: relative;
+  border-radius:5px;
+  background-image:url('../images/user/prof.jpg');
+  background-repeat:no-repeat;
+  background-size: 290px;
+  background-color: #F3EDE9;
+}
+
+#avatar img{
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  left: 118px;
+  top: 20px;
+}
+
+#user-name{
+  position: absolute;
+  text-align: center;
+  left: 92px;
+  top: 84px;
+}
+
+#user-prof{
+  min-height: 145px;
+}
+
+#user-details {
+  background-color: white;
+}
+
+#user-details div{
+  display: inline-block;
+  width: 25%;
+  padding: 10px 10px 10px 10px;
+}
+
+#user-details .title{
+  color: #8D9DB3;
+  font-size: 9px;
+}
+
+#user-details .data{
+  color: #89544E;
+  font-size: 22px;
+}
+
+#user .name{
+  font-size: 20px;
+  color: #fff;
+}
+
+#user .handle{
+  
+}
+
+#compose-tweet{
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 13px;
+
+  color: #D7DBDD;
+  border: 1px solid #EAE0D9;
+  padding-left: 10px;
+  width: 221px;
+  height: 32px;
+}
+
+#mini-prof-comp{
+  padding-right: 10px 10px 10px 10px;
+}
