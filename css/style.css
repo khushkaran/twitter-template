@@ -87,13 +87,6 @@ textarea, input { outline: none; }
   top: 20px;
 }
 
-#user-name{
-  position: absolute;
-  text-align: center;
-  left: 92px;
-  top: 84px;
-}
-
 #user-prof{
   min-height: 145px;
 }
@@ -118,8 +111,21 @@ textarea, input { outline: none; }
   font-size: 22px;
 }
 
-#user .name{
-  font-size: 20px;
+#user-name{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 84px;
+}
+
+#user-name .name{
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 1px 1px #292f33;
+}
+
+#user-name .handle{
+  font-size: 15px;
   color: #fff;
 }
 
@@ -128,6 +134,10 @@ textarea, input { outline: none; }
 }
 
 #compose-tweet{
+  margin: 5px 5% 0 5%;
+}
+
+#compose-tweet input{
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -136,10 +146,6 @@ textarea, input { outline: none; }
   color: #D7DBDD;
   border: 1px solid #EAE0D9;
   padding-left: 10px;
-  width: 221px;
+  width: 95%;
   height: 32px;
-}
-
-#mini-prof-comp{
-  padding-right: 10px 10px 10px 10px;
 }
