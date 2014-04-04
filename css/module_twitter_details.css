@@ -1,0 +1,15 @@
+/*TWITTER-DETAILS*/
+
+#twitter-details{
+  color: #8899a6;
+  line-height: 17px;
+}
+
+#twitter-details a{
+  text-decoration: none;
+  color: #8899a6;
+}
+
+#twitter-details a:hover{
+  text-decoration: underline;
+}

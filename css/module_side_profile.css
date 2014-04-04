@@ -1,0 +1,81 @@
+/*USER PROFILE*/
+
+#user{
+  width: 290px;
+  height: 248px;
+  position: relative;
+  border-radius:5px;
+  background-image:url('../images/user/prof.jpg');
+  background-repeat:no-repeat;
+  background-size: 290px;
+  background-color: #F3EDE9;
+}
+
+#avatar img{
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  left: 118px;
+  top: 20px;
+  border: white 3px solid;
+  border-radius: 3px;
+}
+
+#user-prof{
+  min-height: 145px;
+}
+
+#user-details {
+  background-color: white;
+}
+
+#user-details div{
+  display: inline-block;
+  width: 25%;
+  padding: 10px 10px 10px 10px;
+}
+
+#user-details .title{
+  color: #8D9DB3;
+  font-size: 9px;
+}
+
+#user-details .data{
+  color: #89544E;
+  font-size: 22px;
+}
+
+#user-name{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 84px;
+}
+
+#user-name .name{
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 1px 1px #292f33;
+}
+
+#user-name .handle{
+  font-size: 15px;
+  color: #fff;
+}
+
+#compose-tweet{
+  margin: 5px 5% 0 5%;
+}
+
+#compose-tweet input{
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 13px;
+
+  color: #D7DBDD;
+  border: 1px solid #EAE0D9;
+  padding-left: 10px;
+  width: 95%;
+  height: 32px;
+}

@@ -1,0 +1,21 @@
+/*TRENDS*/
+
+#trends span{
+  font-size: 20px;
+  color: #66757f;
+}
+
+#trends a{
+  font-size: 12px;
+  color: #89544E;
+  text-decoration: none;
+}
+
+#trends a:hover{
+  text-decoration: underline;
+}
+
+#trends ul{
+  padding-top: 10px;
+  line-height: 17px;
+}
