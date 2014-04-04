@@ -61,6 +61,8 @@ header a{ color: #66757F; }
   height: 32px;
   background-image:url('../images/header/search.png');
   background-repeat:no-repeat;
+  background-position:right;
+  background-size:30px;
 }
 
 #search_box::-webkit-input-placeholder { color: #e1e8ed; }
