@@ -23,6 +23,8 @@
   line-height: 25px;
 }
 
+#who-to-follow .user a .full-name:hover {text-decoration: underline; color: #89544E;}
+
 #who-to-follow .user a .handle{
   color: #66757f;
 }
@@ -48,6 +50,7 @@
   width: 87px;
   height: 29px;
   outline: none;
+  cursor: pointer;
 }
 
 .follow-button:hover {

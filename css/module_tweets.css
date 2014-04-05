@@ -22,10 +22,7 @@
 
 #tweets-container .tweet{
   padding: 10px 10px 10px 10px;
-}
-
-.tweet a{
-  text-decoration: none;
+  cursor: pointer;
 }
 
 .tweet .full-name{
@@ -33,9 +30,6 @@
   color: #000;
 }
 
-.tweet .handle, .tweet .time-elapsed{
-  color: #8899a6;
-}
 
 .tweet .message{
   padding-top: 5px;
@@ -50,15 +44,61 @@
   padding-top: 10px;
 }
 
-.tweet .message a:hover{ text-decoration: underline; }
+.tweet .reply-img{
+  width: 12px;
+  height: 9px;
+  background-image:url(../images/user-options/reply.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-right: 5px;
+}
 
+.tweet .retweet-img{
+  width: 12px;
+  height: 9px;
+  background-image:url(../images/user-options/retweet.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.tweet .favorite-img{
+  width: 12px;
+  height: 9px;
+  background-image:url(../images/user-options/favorite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.tweet .more-img{
+  width: 12px;
+  height: 9px;
+  background-image:url(../images/user-options/more.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.tweet:hover{ background-color: #F5F8FA; }
+.tweet:hover .link-expand{ color: #89544E; }
+.tweet:hover #user-options a{ color: #8899a6; }
+.tweet:hover .reply-img{background-image:url(../images/user-options/reply_hover.png);}
+.tweet:hover .retweet-img{background-image:url(../images/user-options/retweet_hover.png);}
+.tweet:hover .favorite-img{background-image:url(../images/user-options/favorite_hover.png);}
+.tweet:hover .more-img{background-image:url(../images/user-options/more_hover.png);}
+
+.tweet a{ text-decoration: none; }
+.tweet .full-name:hover {text-decoration: underline; color: #89544E;}
+.tweet .time-elapsed:hover {text-decoration: underline; color: #89544E;}
+.tweet .handle, .tweet .time-elapsed{ color: #8899a6; }
+.tweet .message a:hover{ text-decoration: underline; }
 .tweet .tweet-footer{ padding-top: 5px; }
 .tweet .tweet-footer a{ text-decoration: none; font-size: 12px; }
 .tweet .tweet-footer a:hover{ text-decoration: underline; }
-.tweet .link-expand { color: #8899a6 }
+.tweet .link-expand { color: #8899a6; }
 .tweet #user-options { float: right; }
-.tweet #user-options a{ color: #ccd6dd; }
-
+.tweet #user-options a{ color: #ccd6dd; padding-right: 10px }
 .tweet .non-image{ margin-left: 64px; }
 
 
