@@ -13,3 +13,7 @@
 #twitter-details a:hover{
   text-decoration: underline;
 }
+
+#twitter-details:hover a{
+  color: #292f33;
+}
