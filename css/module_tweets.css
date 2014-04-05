@@ -1,0 +1,65 @@
+#tweets-container{
+  width: 590px;
+  min-height: 100px;
+  display: inline-block;
+  vertical-align: top;
+
+  border-radius:5px;
+  background-color: white;
+  border: 1px solid #EAE0D9;
+}
+
+#tweets-container #title{
+  font-size: 22px;
+  color: #66757f;
+  padding: 10px 0 10px 10px;
+}
+
+#tweets-container .divider{
+  width: 100%;
+  border-bottom: 1px solid #ccd6dd;
+}
+
+#tweets-container .tweet{
+  padding: 10px 10px 10px 10px;
+}
+
+.tweet a{
+  text-decoration: none;
+}
+
+.tweet .full-name{
+  font-weight: bold;
+  color: #000;
+}
+
+.tweet .handle, .tweet .time-elapsed{
+  color: #8899a6;
+}
+
+.tweet .message{
+  padding-top: 5px;
+  color: #000;
+  font-size: 14px;
+}
+
+.tweet .message a{
+  text-decoration: none;
+  color: #89544E;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.tweet .message a:hover{ text-decoration: underline; }
+
+.tweet .tweet-footer{ padding-top: 5px; }
+.tweet .tweet-footer a{ text-decoration: none; font-size: 12px; }
+.tweet .tweet-footer a:hover{ text-decoration: underline; }
+.tweet .link-expand { color: #8899a6 }
+.tweet #user-options { float: right; }
+.tweet #user-options a{ color: #ccd6dd; }
+
+.tweet .non-image{ margin-left: 64px; }
+
+
+
