@@ -24,22 +24,39 @@ header img{ vertical-align: middle; }
 header div{ display: inline-block; }
 header a{ color: #66757F; }
 
+.header_nav{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.slideup{
+  min-height: 3px;
+  background-color: #895429;
+  display: block;
+  min-width: 40px;
+}
+
+.hidden{
+  display: none;
+}
+
 #logo img{
   width: 20px;
   height: 16px;
 }
 
 #left_menu a{
-  padding-right: 10px;
   font-weight: bold;
   transition: color 1s;
   text-decoration: none;
+  min-height: 100px;
 }
 
-#left_menu a:hover{
-  color: #895429;
+#left_menu a .nav_text{
+  height: 28px
 }
 
+#left_menu a:hover{ color: #895429;}
 #left_menu{ padding-right: 150px; }
 #right_menu a{ padding-left: 10px; }
 

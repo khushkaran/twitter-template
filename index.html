@@ -14,13 +14,17 @@
   <body>
     <header>
       <div id="left_menu">
-        <a href="#" title="Home"><img src="images/header/home.png" data-hover-src="images/header/home_hover.png" data-src="images/header/home.png">&nbsp;Home</a>
+        <div class="header_nav"><a href="#" title="Home"><img src="images/header/home.png" data-hover-src="images/header/home_hover.png" data-src="images/header/home.png"><div class="nav_text">&nbsp;Home</div></a>
+        <div class="slideup"></div></div>
 
-        <a href="#" title="Notifications"><img src="images/header/notifications.png" data-hover-src="images/header/notifications_hover.png" data-src="images/header/notifications.png">&nbsp;Notifications</a>
+        <div class="header_nav"><a href="#" id="notifications" title="Notifications"><img src="images/header/notifications.png" data-hover-src="images/header/notifications_hover.png" data-src="images/header/notifications.png"><div class="nav_text">&nbsp;Notifications</div></a>
+        <div id="notifications_slider" class="slideup hidden"></div></div>
 
-        <a href="#" title="Discover"><img src="images/header/discover.png" data-hover-src="images/header/discover_hover.png" data-src="images/header/discover.png">&nbsp;Discover</a>
+        <div class="header_nav"><a href="#" id="discover" title="Discover"><img src="images/header/discover.png" data-hover-src="images/header/discover_hover.png" data-src="images/header/discover.png"><div class="nav_text">&nbsp;Discover</div></a>
+        <div id="discover_slider" class="slideup hidden"></div></div>
 
-        <a href="#" title="Me"><img src="images/header/me.png" data-hover-src="images/header/me_hover.png" data-src="images/header/me.png">&nbsp;Me</a>
+        <div class="header_nav"><a href="#" id="me" title="Me"><img src="images/header/me.png" data-hover-src="images/header/me_hover.png" data-src="images/header/me.png"><div class="nav_text">&nbsp;Me</div></a>
+        <div id="me_slider" class="slideup hidden"></div></div>
       </div>
 
       <div id="logo"><img src="images/logo.png"></div>
@@ -128,6 +132,7 @@
     </div>
     
     <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
