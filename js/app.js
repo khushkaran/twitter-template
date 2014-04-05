@@ -1,4 +1,4 @@
-$(function () {
+function headerLinkHover(){
   $('header a').hover(function(){
     var newSrc = $(this).children().data("hover-src");
     $(this).children().attr("src", newSrc);
@@ -10,7 +10,9 @@ $(function () {
     var anchorID = "#" + $(this).attr("id") + "_slider";
     $(anchorID).fadeOut();
   });
+}
 
+function searchBoxAnimation(){
   $('#search_box').focus(function(){
     $(this).animate({'background-color':'#66757F'}, 200);
     $(this).animate({'color':'#FFFFFF'});
@@ -20,4 +22,9 @@ $(function () {
     $(this).animate({'background-color':'#A3ACB2'}, 200);
     $(this).animate({'color':'#D7DBDD'});
   });
+}
+
+$(function () {
+  headerLinkHover();
+  searchBoxAnimation();
 });
