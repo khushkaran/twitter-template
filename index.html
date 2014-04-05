@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/module_trends.css">
     <link rel="stylesheet" type="text/css" href="css/module_twitter_details.css">
     <link rel="stylesheet" type="text/css" href="css/module_who_to_follow.css">
+    <link rel="stylesheet" type="text/css" href="css/module_tweets.css">
   </head>
   <body>
     <header>
@@ -38,96 +39,119 @@
 
     </header>
     <div class="content">
+      <div id="side_modules">
+        <div id="user">
+          <div id="avatar"><img src="images/user/user.jpg"></div>
+          <div id="user-name">
+            <span class="name">Khushkaran Singh</span><br />
+            <span class="handle">@ks1ngh</span>
+          </div>
+          <div id="user-prof"></div>
+          <div id="user-details">
+            <div><span class="title">TWEETS</span><br />
+            <span class="data">572</span></div>
+            <div><span class="title">FOLLOWING</span><br />
+            <span class="data">67</span></div>
+            <div><span class="title">FOLLOWERS</span><br />
+            <span class="data">113</span></div>
+          </div>
+          <div id="compose-tweet"><input type="text" placeholder="Compose new Tweet..."></div>
+        </div>
 
-      <div id="user">
-        <div id="avatar"><img src="images/user/user.jpg"></div>
-        <div id="user-name">
-          <span class="name">Khushkaran Singh</span><br />
-          <span class="handle">@ks1ngh</span>
+        <br />
+
+        <div id="who-to-follow" class="module">
+          <div class="title-area">
+            <span>Who to follow</span>
+            <a href="#">Refresh</a>
+            <a href="#">View all</a>
+          </div>
+
+          <div class="user">
+            <div class="userimage" style="background: url(images/user/bbcrorycj.jpg) no-repeat; background-size:54px;"></div>
+            <a href="#"><span class="full-name">Rory Cellan-Jones</span> <span class="handle">@BBCRoryCJ</span></a><br />
+            <button class="follow-button"></button>
+          </div>
+
+          <div class="user">
+            <div class="userimage" style="background: url(images/user/pratt_b.jpeg) no-repeat; background-size:54px;"></div>
+            <a href="#"><span class="full-name">Brian Pratt</span> <span class="handle">@pratt_b</span></a><br />
+            <button class="follow-button"></button>
+          </div>
+
+          <div class="user">
+            <div class="userimage" style="background: url(images/user/slagyr.png) no-repeat; background-size:54px;"></div>
+            <a href="#"><span class="full-name">Micah Martin</span> <span class="handle">@slagyr</span></a><br />
+            <button class="follow-button"></button>
+          </div>
+
+          <div class="follow-footer"><a href="#">Popular accounts</a> &bull; <a href="#">Find friends</a></div>
         </div>
-        <div id="user-prof"></div>
-        <div id="user-details">
-          <div><span class="title">TWEETS</span><br />
-          <span class="data">572</span></div>
-          <div><span class="title">FOLLOWING</span><br />
-          <span class="data">67</span></div>
-          <div><span class="title">FOLLOWERS</span><br />
-          <span class="data">113</span></div>
+
+        <br />
+
+        <div id="trends" class="module">
+          <span>Trends</span>
+          <a href="#">Change</a>
+          <ul>
+            <li><a href="#">#0800FUN</a></li>
+            <li><a href="#">Brendan Eich</a></li>
+            <li><a href="#">#startups</a></li>
+            <li><a href="#">#AskCarrieFriends</a></li>
+            <li><a href="#">#WCBP14</a></li>
+            <li><a href="#">#ModelcartDOTcom</a></li>
+            <li><a href="#">#vamily</a></li>
+            <li><a href="#">Easter</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Glastonbury</a></li>
+          </ul>
         </div>
-        <div id="compose-tweet"><input type="text" placeholder="Compose new Tweet..."></div>
+
+        <br />
+
+        <div id="twitter-details" class="module">
+          &copy; 2014 Twitter&nbsp;
+          <a href="#">About</a>&nbsp;
+          <a href="#">Help</a>&nbsp;
+          <a href="#">Terms</a>&nbsp;
+          <a href="#">Privacy</a>&nbsp;
+          <a href="#">Cookies</a>&nbsp;
+          <a href="#">Ads info</a>&nbsp;
+          <a href="#">Brand</a>&nbsp;
+          <a href="#">Blog</a>&nbsp;
+          <a href="#">Status</a>&nbsp;
+          <a href="#">Apps</a>&nbsp;
+          <a href="#">Jobs</a>&nbsp;
+          <a href="#">Advertise</a>&nbsp;
+          <a href="#">Businesses</a>&nbsp;
+          <a href="#">Media</a>&nbsp;
+          <a href="#">Developers</a>
+        </div>
       </div>
 
-      <br />
+      <div id="tweets-container">
+        <div id="title">Tweets</div>
+        <div class="divider"></div>
 
-      <div id="who-to-follow" class="module">
-        <div class="title-area">
-          <span>Who to follow</span>
-          <a href="#">Refresh</a>
-          <a href="#">View all</a>
+        <div class="tweet">
+          <div class="userimage" style="background: url(images/tweets/f1.png) no-repeat; background-size:54px;"></div>
+
+          <div class="non-image">
+            <a href="#"><span class="full-name">Formula1.com</span> <span class="handle">@F1</span></a>&nbsp;
+            <a class="time-elapsed" href="#">15m</a>
+            <div class="message">Practice 3 results for the 2014 FORMULA 1 GULF AIR BAHRAIN GRAND PRIX are now available... <a href="">http://bit.ly/1mLWraX</a></div>
+            <div class="tweet-footer">
+              <a href="#" class="link-expand">Expand</a >
+              <div id="user-options">
+                <a href="#" class="link-reply">Reply</a >
+                <a href="#" class="link-retweet">Retweet</a >
+                <a href="#" class="link-favorite">Favorite</a >
+                <a href="#" class="link-more">More</a >
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="user">
-          <div class="userimage" style="background: url(images/user/bbcrorycj.jpg) no-repeat; background-size:54px;"></div>
-          <a href="#"><span class="full-name">Rory Cellan-Jones</span> <span class="handle">@BBCRoryCJ</span></a><br />
-          <button class="follow-button"></button>
-        </div>
-
-        <div class="user">
-          <div class="userimage" style="background: url(images/user/pratt_b.jpeg) no-repeat; background-size:54px;"></div>
-          <a href="#"><span class="full-name">Brian Pratt</span> <span class="handle">@pratt_b</span></a><br />
-          <button class="follow-button"></button>
-        </div>
-
-        <div class="user">
-          <div class="userimage" style="background: url(images/user/slagyr.png) no-repeat; background-size:54px;"></div>
-          <a href="#"><span class="full-name">Micah Martin</span> <span class="handle">@slagyr</span></a><br />
-          <button class="follow-button"></button>
-        </div>
-
-        <div class="follow-footer"><a href="#">Popular accounts</a> &bull; <a href="#">Find friends</a></div>
       </div>
-
-      <br />
-
-      <div id="trends" class="module">
-        <span>Trends</span>
-        <a href="#">Change</a>
-        <ul>
-          <li><a href="#">#0800FUN</a></li>
-          <li><a href="#">Brendan Eich</a></li>
-          <li><a href="#">#startups</a></li>
-          <li><a href="#">#AskCarrieFriends</a></li>
-          <li><a href="#">#WCBP14</a></li>
-          <li><a href="#">#ModelcartDOTcom</a></li>
-          <li><a href="#">#vamily</a></li>
-          <li><a href="#">Easter</a></li>
-          <li><a href="#">London</a></li>
-          <li><a href="#">Glastonbury</a></li>
-        </ul>
-      </div>
-
-      <br />
-
-      <div id="twitter-details" class="module">
-        &copy; 2014 Twitter&nbsp;
-        <a href="#">About</a>&nbsp;
-        <a href="#">Help</a>&nbsp;
-        <a href="#">Terms</a>&nbsp;
-        <a href="#">Privacy</a>&nbsp;
-        <a href="#">Cookies</a>&nbsp;
-        <a href="#">Ads info</a>&nbsp;
-        <a href="#">Brand</a>&nbsp;
-        <a href="#">Blog</a>&nbsp;
-        <a href="#">Status</a>&nbsp;
-        <a href="#">Apps</a>&nbsp;
-        <a href="#">Jobs</a>&nbsp;
-        <a href="#">Advertise</a>&nbsp;
-        <a href="#">Businesses</a>&nbsp;
-        <a href="#">Media</a>&nbsp;
-        <a href="#">Developers</a>
-      </div>
-
-      <div id="tweets-container"></div>
 
     </div>
     

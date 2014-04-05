@@ -93,6 +93,10 @@ textarea, input { outline: none; }
   margin: 70px auto;
 }
 
+#side_modules {
+  display: inline-block;
+}
+
 .module{
   width: 270px;
   position: relative;
