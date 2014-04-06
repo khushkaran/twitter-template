@@ -24,7 +24,50 @@ function searchBoxAnimation(){
   });
 }
 
+function tweetBoxAnimation(){
+  $('#compose-tweet textarea').focus(function(){
+    $(this).css({height:'93px'});
+    $(this).css({border:'2px solid #cfbaa9'});
+    $(this).css({color:'#000'});
+    $(this).attr("placeholder", "");
+    $('#user').css({height: '370px'});
+    $('#compose-tweet #compose-options div').css({opacity: 1});
+  });
+
+  $('#compose-tweet textarea').blur(function(){
+    if ($('#compose-tweet textarea').val().length === 0) {
+      $(this).css({height:'18px'});
+      $(this).css({border:'2px solid #EAE0D9'});
+      $(this).css({color:'#D7DBDD'});
+      $(this).attr("placeholder", "Compose new Tweet...");
+      $('#user').css({height: '248px'});
+      $('#compose-tweet #compose-options div').css({opacity: 0});
+    };
+  });
+
+  $('#compose-tweet #option-tweet').hover(function(){
+    if ($('#compose-tweet textarea').val().length > 0) {
+      $('#compose-tweet #option-tweet').css({'background-image':'url(images/options/option-tweet-hover.png)'});
+    }
+  },function(){
+    if ($('#compose-tweet textarea').val().length > 0) {
+      $('#compose-tweet #option-tweet').css({'background-image':'url(images/options/option-tweet-active.png)'});
+    }
+  });
+
+  $('#compose-tweet textarea').keyup(function() {
+    var charCount = $('#compose-tweet textarea').val().length;
+    $('#compose-tweet #char-count').html(140 - charCount);
+    if ($('#compose-tweet textarea').val().length > 0) {
+      $('#compose-tweet #option-tweet').css({'background-image':'url(images/options/option-tweet-active.png)'});
+    }else{
+      $('#compose-tweet #option-tweet').css({'background-image':'url(images/options/option-tweet.png)'});
+    }
+  });
+}
+
 $(function () {
   headerLinkHover();
   searchBoxAnimation();
+  tweetBoxAnimation();
 });

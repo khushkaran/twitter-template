@@ -69,18 +69,60 @@
 }
 
 #compose-tweet{
-  margin: 5px 5% 0 5%;
+  margin: 8px 5% 0 5%;
 }
 
-#compose-tweet input{
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+#compose-tweet textarea{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   font-size: 13px;
-
+  resize: none;
   color: #D7DBDD;
-  border: 1px solid #EAE0D9;
-  padding-left: 10px;
+  border: 2px solid #EAE0D9;
+  padding: 6px 8px 5px 6px;
   width: 95%;
-  height: 32px;
+  height: 18px;
+}
+
+#compose-tweet #compose-options{
+  margin-top: 10px;
+}
+
+#compose-tweet #compose-options div{
+  display: inline-block;
+  background-repeat: no-repeat;
+  height: 39px;
+  opacity: 0;
+}
+
+#compose-tweet #option-photo{
+  background-image: url(../images/options/option-photo.png);
+  width: 42px;
+  /*margin-top: 10px;*/
+  padding-right: 5px;
+}
+
+#compose-tweet #option-loc{
+  background-image: url(../images/options/option-loc.png);
+  width: 38px;
+  /*margin-top: 10px;*/
+  padding-right: 5px;
+}
+
+#compose-tweet #option-photo:hover{ background-image: url(../images/options/option-photo-hover.png); }
+#compose-tweet #option-loc:hover{ background-image: url(../images/options/option-loc-hover.png); }
+
+#compose-tweet #char-count{
+  width: 20px;
+  padding-left: 32px;
+  margin-top: 12px;
+  vertical-align: top;
+}
+
+#compose-tweet #option-tweet{
+  background-image: url(../images/options/option-tweet.png);
+  width: 97px;
+  margin-left: 10px;
+  vertical-align: top;
 }
