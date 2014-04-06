@@ -66,11 +66,22 @@ function tweetBoxAnimation(){
   });
 }
 
-function addTweets(){
+function addTweets(start,end){
   $.getJSON( "js/tweets.json", function(tweets) {
-    for ( var i = 0; i < 6; i++ ) {
+    for ( var i = start; i < end; i++ ) {
       var newTweet = Mustache.render($('#tweet-template').html(), tweets[i]);
-      $(newTweet).appendTo('#tweets-container').slideDown();
+      $(newTweet).appendTo('#all-tweets').slideDown();
+    }
+  });
+}
+
+function scrollToBottom(){
+  $(window).scroll(function() {   
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+      setTimeout(function() {
+        random = Math.ceil(Math.random() * 10)
+        addTweets(random,12);
+      }, 1000);
     }
   });
 }
@@ -79,5 +90,6 @@ $(function () {
   headerLinkHover();
   searchBoxAnimation();
   tweetBoxAnimation();
-  addTweets();
+  addTweets(0,12);
+  scrollToBottom();
 });

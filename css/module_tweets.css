@@ -80,6 +80,15 @@
   padding-right: 5px;
 }
 
+#tweets-container #loading{
+  text-align: center;
+}
+
+#tweets-container #loading img{
+  height: 50px;
+  width: 50px;
+}
+
 .tweet:hover{ background-color: #F5F8FA; }
 .tweet:hover .link-expand{ color: #89544E; }
 .tweet:hover #user-options a{ color: #8899a6; }
