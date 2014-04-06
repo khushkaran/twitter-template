@@ -105,3 +105,7 @@ textarea, input { outline: none; }
   border: 1px solid #EAE0D9;
   padding: 10px 10px 10px 10px;
 }
+
+template {
+  display: none;
+}
