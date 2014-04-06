@@ -12,6 +12,7 @@ body{
 header{
   background-color: #fff;
   min-height: 46px;
+  min-width: 990px;
   text-align: center;
   margin:0px auto;
   position:fixed;
@@ -127,6 +128,7 @@ template { display: none; }
 
 #dialog{
   background-color: #f0ebe6;
+  display: none;
 }
 
 #dialog div{

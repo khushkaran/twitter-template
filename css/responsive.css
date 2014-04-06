@@ -1,0 +1,11 @@
+@media(max-width: 990px){
+  header .header_nav .readable{
+    display: none;
+  }
+  header .header_nav{
+    min-width: 40px;
+  }
+  header{
+    min-width: 890px;
+  }
+}
