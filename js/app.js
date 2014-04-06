@@ -66,8 +66,18 @@ function tweetBoxAnimation(){
   });
 }
 
+function addTweets(){
+  $.getJSON( "js/tweets.json", function(tweets) {
+    for ( var i = 0; i < 6; i++ ) {
+      var newTweet = Mustache.render($('#tweet-template').html(), tweets[i]);
+      $(newTweet).appendTo('#tweets-container').slideDown();
+    }
+  });
+}
+
 $(function () {
   headerLinkHover();
   searchBoxAnimation();
   tweetBoxAnimation();
+  addTweets();
 });
