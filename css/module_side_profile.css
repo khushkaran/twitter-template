@@ -35,14 +35,19 @@
   padding: 10px 10px 10px 10px;
 }
 
+#user-details a{
+  text-decoration: none;
+}
+
 #user-details .title{
   color: #8D9DB3;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 #user-details .data{
   color: #89544E;
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #user-name{
