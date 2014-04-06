@@ -4,6 +4,7 @@
     <title>Twitter</title>
     <head profile="http://www.w3.org/2005/10/profile">
     <link rel="icon" type="image/ico" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.4/themes/black-tie/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/module_side_profile.css">
@@ -34,7 +35,7 @@
       <div id="search_div"><input id="search_box" type="text" placeholder="Search"></div>
       <a href="#" title="Direct Messages"><img src="images/header/messages.png" data-hover-src="images/header/messages_hover.png" data-src="images/header/messages.png"></a>
       <a href="#" title="Settings and help"><img src="images/header/settings.png" data-hover-src="images/header/settings_hover.png" data-src="images/header/settings.png"></a>
-      <a href="#" title="Compose new Tweet"><img src="images/header/tweet.png" data-hover-src="images/header/tweet_hover.png" data-src="images/header/tweet.png"></a>
+      <a href="#" id="compose-tweet-button" title="Compose new Tweet"><img src="images/header/tweet.png" data-hover-src="images/header/tweet_hover.png" data-src="images/header/tweet.png"></a>
       </div>
 
     </header>
@@ -58,10 +59,10 @@
           <div id="compose-tweet">
             <textarea placeholder="Compose new Tweet..." maxlength="140"></textarea>
             <div id="compose-options">
-              <div id="option-photo"></div>
-              <div id="option-loc"></div>
+              <a href="#"><div id="option-photo"></div></a>
+              <a href="#"><div id="option-loc"></div></a>
               <div id="char-count">140</div>
-              <div id="option-tweet"></div>
+              <a href="#"><div id="option-tweet"></div></a>
             </div>
           </div>
         </div>
@@ -156,8 +157,17 @@
       </div>
 
     </div>
+
+  <div id="dialog" title="Compose new Tweet">
+    <textarea></textarea>
+    <a href="#"><div id="dialog-photo-option"></div></a>
+    <a href="#"><div id="dialog-loc-option"></div></a>
+    <div id="char-count">140</div>
+    <a href="#"><div id="option-tweet"></div></a>
+  </div>
     
     <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.color-2.1.2.min.js"></script>
     <script src="js/mustache.js"></script>
     <script src="js/app.js"></script>

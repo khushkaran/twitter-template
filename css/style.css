@@ -106,6 +106,75 @@ textarea, input { outline: none; }
   padding: 10px 10px 10px 10px;
 }
 
-template {
-  display: none;
+template { display: none; }
+
+#dialog #dialog-photo-option{
+  background-image:url(../images/options/option-photo-text.png);
+  background-repeat: no-repeat;
+  width: 106px;
+  height: 39px;
+}
+
+#dialog #dialog-loc-option{
+  background-image:url(../images/options/option-loc-text.png);
+  background-repeat: no-repeat;
+  width: 113px;
+  height: 39px;
+}
+
+#dialog #dialog-photo-option:hover{ background-image:url(../images/options/option-photo-text-hover.png); }
+#dialog #dialog-loc-option:hover{ background-image:url(../images/options/option-loc-text-hover.png); }
+
+#dialog{
+  background-color: #f0ebe6;
+}
+
+#dialog div{
+  display: inline-block;
+}
+
+#dialog textarea{
+  width: 475px;
+  height: 98px;
+  resize: none;
+  padding: 6px 8px 5px 6px;
+  border: 2px solid #EAE0D9;
+}
+
+#dialog textarea:focus{
+  border-color: #cfbaa9;
+}
+
+#dialog #char-count{
+  width: 20px;
+  height: 39px;
+  padding-left: 100px;
+  margin-top: 12px;
+  vertical-align: top;
+  color: #999999;
+}
+
+#dialog #option-tweet{
+  background-image: url(../images/options/option-tweet.png);
+  width: 97px;
+  height: 39px;
+  margin-left: 38px;
+}
+
+.ui-dialog > .ui-widget-header {
+  background: white;
+  text-align: center;
+  color: #8899a6;
+  border: none;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+}
+
+.ui-widget-content.ui-dialog {
+    border: none;
+}
+
+.tweet-dialog {
+    border-radius:5px;
+    background-color: #f0ebe6;
 }

@@ -55,13 +55,30 @@ function tweetBoxAnimation(){
     }
   });
 
-  $('#compose-tweet textarea').keyup(function() {
+  $('#dialog #option-tweet').hover(function(){
+    if ($('#dialog textarea').val().length > 0) {
+      $('#dialog #option-tweet').css({'background-image':'url(images/options/option-tweet-hover.png)'});
+    }
+  },function(){
+    if ($('#dialog textarea').val().length > 0) {
+      $('#dialog #option-tweet').css({'background-image':'url(images/options/option-tweet-active.png)'});
+    }
+  });
+
+  $('#compose-tweet textarea, #dialog textarea').keyup(function() {
     var charCount = $('#compose-tweet textarea').val().length;
+    var charCountDialog = $('#dialog textarea').val().length;
     $('#compose-tweet #char-count').html(140 - charCount);
+    $('#dialog #char-count').html(140 - charCountDialog);
     if ($('#compose-tweet textarea').val().length > 0) {
       $('#compose-tweet #option-tweet').css({'background-image':'url(images/options/option-tweet-active.png)'});
     }else{
       $('#compose-tweet #option-tweet').css({'background-image':'url(images/options/option-tweet.png)'});
+    }
+    if ($('#dialog textarea').val().length > 0) {
+      $('#dialog #option-tweet').css({'background-image':'url(images/options/option-tweet-active.png)'});
+    }else{
+      $('#dialog #option-tweet').css({'background-image':'url(images/options/option-tweet.png)'});
     }
   });
 }
@@ -86,10 +103,26 @@ function scrollToBottom(){
   });
 }
 
+function tweetComposeDialog(){
+  $('#compose-tweet-button').click(function(event){
+    event.preventDefault();
+    $("#dialog").dialog({
+      width: 520,
+      height: 214,
+      resizable: false,
+      modal: true,
+      show: {effect: "fade",duration: 150},
+      hide: {effect: "fade",duration: 150},
+      dialogClass: 'tweet-dialog',
+    });
+  })
+}
+
 $(function () {
   headerLinkHover();
   searchBoxAnimation();
   tweetBoxAnimation();
   addTweets(0,12);
   scrollToBottom();
+  tweetComposeDialog();
 });

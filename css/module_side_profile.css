@@ -99,14 +99,12 @@
 #compose-tweet #option-photo{
   background-image: url(../images/options/option-photo.png);
   width: 42px;
-  /*margin-top: 10px;*/
   padding-right: 5px;
 }
 
 #compose-tweet #option-loc{
   background-image: url(../images/options/option-loc.png);
   width: 38px;
-  /*margin-top: 10px;*/
   padding-right: 5px;
 }
 
@@ -118,6 +116,7 @@
   padding-left: 32px;
   margin-top: 12px;
   vertical-align: top;
+  color: #999999;
 }
 
 #compose-tweet #option-tweet{
